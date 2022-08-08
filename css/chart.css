@@ -1,0 +1,293 @@
+/* font */
+
+.c3,
+.c3 svg,
+div.vis-tooltip {
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* vis */
+
+div.vis-network {
+    outline: none;
+}
+
+/* legend */
+
+.c3-legend-item text {
+    fill: dimgray;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dark .c3-legend-item text {
+    fill: lightgray;
+}
+
+.white .c3-legend-item text {
+    fill: dimgray;
+}
+
+.c3-legend-item-tile {
+    shape-rendering: auto;
+    stroke-linecap: round;
+    stroke-dasharray: 0.1 10;
+    stroke-width: 8;
+    transform: translate(6px, 1px);
+}
+
+/*.tooltip */
+
+div.vis-tooltip {
+    border: none;
+    color: rgb(52, 58, 64);
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+.c3-tooltip-container {
+    background-color: rgba(255, 255, 255, .7);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+table.c3-tooltip,
+table.c3-tooltip>tbody,
+table.c3-tooltip>tbody>tr,
+table.c3-tooltip>tbody>tr>th,
+table.c3-tooltip>tbody>tr>td {
+    color: rgb(52, 58, 64);
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+table.c3-tooltip>tbody>tr>th {
+    font-size: 14px;
+}
+
+table.c3-tooltip>tbody>tr>td {
+    font-size: 12px;
+}
+
+table.c3-tooltip>tbody>tr>td:last-child {
+    font-weight: bold;
+}
+
+table.c3-tooltip>tbody>tr>td.name>span {
+    clip-path: inset(1px 1px 1px 1px round 4px 4px 4px 4px);
+}
+
+/* line, area chart */
+
+.c3-line {
+    stroke-width: 3px;
+}
+
+.c3-circle {
+    stroke-width: 2px;
+    stroke: rgb(92, 107, 192) !important;
+}
+
+path.domain {
+    stroke: dimgray;
+}
+
+.dark path.domain {
+    stroke: lightgray;
+}
+
+.white path.domain {
+    stroke: dimgray;
+}
+
+.tick line {
+    stroke: dimgray;
+}
+
+.dark .tick line {
+    stroke: lightgray;
+}
+
+.white .tick line {
+    stroke: dimgray;
+}
+
+.tick text {
+    font-family: RobotoCondensed;
+    fill: dimgray;
+}
+
+.dark .tick text {
+    fill: lightgray;
+}
+
+.white .tick text {
+    fill: dimgray;
+}
+
+.c3-xgrid,
+.c3-ygrid {
+    opacity: .5 !important;
+}
+
+.text-light .c3-xgrid,
+.text-light .c3-ygrid {
+    stroke: white;
+}
+
+/* axis */
+
+.c3-axis-x-label {
+    fill: dimgray;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* pie, donut chart */
+
+.c3-chart-arc path {
+    stroke-width: 3px;
+    stroke: white;
+}
+
+.dark .c3-chart-arc path {
+    stroke: #263238;
+}
+
+.white .c3-chart-arc path {
+    stroke: white;
+}
+
+/* unused */
+.c3-chart-arc text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c3-chart-arcs-title {
+    font-family: Lato;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+/* threshold */
+.c3-region.threshold {
+    fill: red;
+}
+
+/* container */
+
+.data-description {
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.c3-container,
+.vis-network,
+.score-container {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.vis-network {
+    border-radius: 24px;
+    background-color: #263238;
+    border: 2px solid #5c6bc0;
+}
+
+/* table container */
+
+.data-container:not(.text) {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.data-container:not(.text)>*:first-child {
+    width: 100%;
+}
+
+.c3-container.line {
+    min-height: 280px;
+}
+
+.c3-container.pie {
+    min-height: 200px;
+}
+
+/* score */
+
+.score-container {
+    min-height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    font-family: Lato;
+    font-style: italic;
+    font-size: 144px;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: #263238;
+}
+
+.card-body.dark .score {
+    color: lightgray;
+}
+
+/* zoomable line */
+
+.zoom-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.zoom-menu>div:first-child {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 14px;
+    margin: 0;
+    padding: 4px;
+}
+
+.zoom-interval {
+    color: white;
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+.zoom-menu .tooltip-btn {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    opacity: .75;
+}
+
+.zoom-btn {
+    background-image: url("../resrc/icons/zoom_out-white.svg");
+    box-shadow: none;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+    padding: 0;
+}
